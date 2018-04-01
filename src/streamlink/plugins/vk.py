@@ -11,7 +11,7 @@ from streamlink.utils.crypto import unpad_pkcs5
 
 
 class VK(Plugin):
-    _url_re = re.compile(r"http(?:s)?://(\w+\.)?vk.com/video-[0-9]*_[0-9]*")
+    _url_re = re.compile(r"http(?:s)?://(\w+\.)?vk.com/video[-,0-9]*_[0-9]*")
     _url_catalog_re = re.compile(r"http(?:s)?://(\w+\.)?vk.com/videos-[0-9]*")
     _livestream_sources_re = re.compile(r"<source src=\\\"(.*?)\\\" type=\\\"application\\\/vnd\.apple\.mpegurl\\\">")
     _vod_sources_re = re.compile(r"<source src=\\\"(.*?)\\\" type=\\\"video\\\/mp4\\\">")
